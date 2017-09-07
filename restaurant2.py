@@ -1,6 +1,13 @@
 import random
+import pygame
+pygame.init()
 
+fonts = pygame.font.Font("heart.ttf", 17)
+size = (800, 600)
+screen = pygame.display.set_mode(size)
+gameon = True
 
+    
 breakfastlist = [
     "Avenue Cafe",
     "The Sand Bar",
@@ -61,28 +68,8 @@ fulllist = [
     "East Side Eatery"
 ]
 
-meal = input("""
-Are you looking for
-a) breakfast
-b) lunch
-c) dinner
-d) snack
-
-type in a, b ,c, or d
- """)
-
-
-if meal == "a":
-    restaurants = breakfastlist
-elif meal == "b":
-    restaurants = lunchlist
-elif meal == "d":
-    restaurants = snacklist
-elif meal == "c":
-    restaurants = dinnerlist
-
-restaurantnum = len(restaurants)
-restaurantran = random.randrange(0, restaurantnum)
-restaurantstr = str(restaurantnum)
-print("There are " + restaurantstr + " restaurants in the " + meal + " list")
-print("How about " + restaurants[restaurantran] + "?")
+while gameon:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            gameon = False
+    pygame.display.update()
