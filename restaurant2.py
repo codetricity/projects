@@ -1,6 +1,9 @@
 import random
 import pygame
 pygame.init()
+pygame.display.set_caption("Restaurants")
+iconsurface = pygame.image.load("cherry.png")
+pygame.display.set_icon(iconsurface)
 
 fonts = pygame.font.Font("heart.ttf", 50)
 pink = (247, 96, 237)
