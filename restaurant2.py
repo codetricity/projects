@@ -125,35 +125,35 @@ while gameon:
                 restaurantnum = len(restaurants)
                 restaurantran = random.randrange(0, restaurantnum)
                 restaurantstr = restaurants[restaurantran]
-                restaurantMessage = "Caitlyn recomends " + restaurantstr
+                restaurantMessage = "Caitlyn recommends " + restaurantstr
                 messageColor = pink
             if breakfastbuttonrect.collidepoint(mousepos):
                 restaurants = breakfastlist
                 restaurantnum = len(restaurants)
                 restaurantran = random.randrange(0, restaurantnum)
                 restaurantstr = restaurants[restaurantran]
-                restaurantMessage = "Caitlyn recomends " + restaurantstr
+                restaurantMessage = "Caitlyn recommends " + restaurantstr
                 messageColor = palegreen
             if lunchbuttonrect.collidepoint(mousepos):
                 restaurants = lunchlist
                 restaurantnum = len(restaurants)
                 restaurantran = random.randrange(0, restaurantnum)
                 restaurantstr = restaurants[restaurantran]
-                restaurantMessage = "Caitlyn recomends " + restaurantstr
+                restaurantMessage = "Caitlyn recommends " + restaurantstr
                 messageColor = lightblue
             if dinnerbuttonrect.collidepoint(mousepos):
                 restaurants = dinnerlist
                 restaurantnum = len(restaurants)
                 restaurantran = random.randrange(0, restaurantnum)
                 restaurantstr = restaurants[restaurantran]
-                restaurantMessage = "Caitlyn recomends " + restaurantstr
+                restaurantMessage = "Caitlyn recommends " + restaurantstr
                 messageColor = orange
             if snackbuttonrect.collidepoint(mousepos):
                 restaurants = snacklist
                 restaurantnum = len(restaurants)
                 restaurantran = random.randrange(0, restaurantnum)
                 restaurantstr = restaurants[restaurantran]
-                restaurantMessage = "Caitlyn recomends " + restaurantstr
+                restaurantMessage = "Caitlyn recommends " + restaurantstr
                 messageColor = purple
 
     screen.fill(black)
