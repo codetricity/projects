@@ -18,6 +18,14 @@ h1 {
     font-family: 'Gochi Hand', cursive;
     text-align: center;
 }
+button {
+    background-color: #fcff82;
+    color: #0080ff;
+    font-size: 30px;
+    padding: 12px 20px;
+    font-family: 'Gochi Hand', cursive;
+
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Great+Vibes|Rancho" 
@@ -32,8 +40,13 @@ Caitlyn's Restaurant Finder
 <p id="restaurantresponse">
 </p>
 
+<button onclick="findRestaurant()">All Restaurants</button>
+
 
 <script>
+function findRestaurant() {
+
+
   var fullList = [
     "Sushi Garden",
     "Asian Express",
@@ -60,6 +73,8 @@ console.log(randomrestaurant);
 var restaurantresponse = document.getElementById("restaurantresponse");
 var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
 restaurantresponse.innerHTML = restaurantmessage;
+}
+
 </script>
 </body>
 </html>
