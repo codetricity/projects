@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<style>
+body {
+    background-color:aquamarine;
+}
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #7701fa; 
+    font-size: 60px;
+    text-align: center;
+}
+#restaurantresponse {
+    color: #ff00ff;
+    font-size: 40px;
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+}
+button {
+    background-color: #fcff82;
+    color: #0080ff;
+    font-size: 30px;
+    padding: 12px 20px;
+    font-family: 'Gochi Hand', cursive;
+
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Great+Vibes|Rancho" 
+rel="stylesheet">
+
+</head>
+<body>
+
+<h1> 
+Caitlyn's Restaurant Finder    
+</h1>
+<p id="restaurantresponse">
+</p>
+
+<button onclick="findRestaurant()">All Restaurants</button>
+
+
+<script>
+function findRestaurant() {
+
+
+  var fullList = [
+    "Sushi Garden",
+    "Asian Express",
+    "Mayflower",
+    "Betty's Burgers",
+    "Erik's Deli Cafe",
+    "Avenue Cafe",
+    "Dharma's",
+    "Wasabi Tapas",
+    "Roux Dat Cajun",
+    "Paradise Beach Grille",
+    "Taqueria Vallata",
+    "iCrave",
+    "Chipotle",
+    "East Side Eatery"
+]; 
+
+console.log(fullList);
+var lengthlist = fullList.length;
+var randomnum = Math.floor(Math.random() * lengthlist);
+console.log(randomnum);
+var randomrestaurant = fullList[randomnum];
+console.log(randomrestaurant);
+var restaurantresponse = document.getElementById("restaurantresponse");
+var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
+restaurantresponse.innerHTML = restaurantmessage;
+}
+
+</script>
+</body>
+</html>
