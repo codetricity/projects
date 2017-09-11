@@ -26,6 +26,9 @@ button {
     font-family: 'Gochi Hand', cursive;
 
 }
+#buttonrow {
+    text-align: center;
+}
 </style>
 
 <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Great+Vibes|Rancho" 
@@ -40,12 +43,13 @@ Caitlyn's Restaurant Finder
 <p id="restaurantresponse">
 </p>
 
+<div id="buttonrow">
 <button onclick="findRestaurant()">All Restaurants</button>
 <button onclick="findBreakfast()">Breakfast</button>
 <button onclick="findLunch()">Lunch</button>
 <button onclick="findDinner()">Dinner</button>
 <button onclick="findSnack()">Snack</button>
-
+</div>
 
 <script>
 function findRestaurant() {
