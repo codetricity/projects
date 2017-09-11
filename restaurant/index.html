@@ -41,6 +41,10 @@ Caitlyn's Restaurant Finder
 </p>
 
 <button onclick="findRestaurant()">All Restaurants</button>
+<button onclick="findBreakfast()">Breakfast</button>
+<button onclick="findLunch()">Lunch</button>
+<button onclick="findDinner()">Dinner</button>
+<button onclick="findSnack()">Snack</button>
 
 
 <script>
@@ -75,6 +79,102 @@ var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
 restaurantresponse.innerHTML = restaurantmessage;
 }
 
+function findBreakfast() {
+
+    var breakfastList = [
+    "Avenue Cafe",
+    "The Sand Bar",
+    "Zelda's",
+    "Cook House",
+    "Sunrise Cafe"
+];
+
+console.log(breakfastList);
+var lengthlist = breakfastList.length;
+var randomnum = Math.floor(Math.random() * lengthlist);
+console.log(randomnum);
+var randomrestaurant = breakfastList[randomnum];
+console.log(randomrestaurant);
+var restaurantresponse = document.getElementById("restaurantresponse");
+var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
+restaurantresponse.innerHTML = restaurantmessage;
+
+}
+
+function findLunch() {
+
+    var lunchList = [
+    "Sushi Garden",
+    "Erik's Deli Cafe",
+    "Betty's Burger",
+    "Chipotle",
+    "Togos",
+    "Dharma's",
+    "Thai Basil"
+];
+
+console.log(lunchList)
+var lengthlist = lunchList.length;
+var randomnum = Math.floor(Math.random() * lengthlist);
+console.log(randomnum);
+var randomrestaurant = lunchList[randomnum];
+console.log(randomrestaurant);
+var restaurantresponse = document.getElementById("restaurantresponse");
+var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
+restaurantresponse.innerHTML = restaurantmessage;
+}
+
+function findDinner() {
+
+    var dinnerList = [
+    "Asian Express",
+    "Mayflower",
+    "Roux Dat Cajun",
+    "Sushi Garden",
+    "Canton",
+    "Paradise Beach Grille",
+    "Taqueria Vallata",
+    "East Side Eatery",
+    "Aloha Island Grill",
+    "Cafe Cruz"
+];
+
+console.log(dinnerList)
+var lengthlist = dinnerList.length;
+var randomnum = Math.floor(Math.random() * lengthlist);
+console.log(randomnum);
+var randomrestaurant = dinnerList[randomnum];
+console.log(randomrestaurant);
+var restaurantresponse = document.getElementById("restaurantresponse");
+var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
+restaurantresponse.innerHTML = restaurantmessage;
+}
+
+function findSnack() {
+
+    var snackList = [
+    "iCrave",
+    "Yogurtland",
+    "Penny Creamery",
+    "Baskin Robbins",
+    "Gayle's Bakery",
+    "Jamba Juice",
+    "Verve",
+    "Mr. Toot's Coffeehouse",
+    "Off the Block"
+];
+
+console.log(snackList)
+var lengthlist = snackList.length;
+var randomnum = Math.floor(Math.random() * lengthlist);
+console.log(randomnum);
+var randomrestaurant = snackList[randomnum];
+console.log(randomrestaurant);
+var restaurantresponse = document.getElementById("restaurantresponse");
+var restaurantmessage = "Caitlyn recommends " + randomrestaurant;
+restaurantresponse.innerHTML = restaurantmessage;
+
+}
 </script>
 </body>
 </html>
