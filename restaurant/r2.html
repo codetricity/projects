@@ -1,20 +1,31 @@
 <html>
 <body>
     <h1>
-        Caitlyn's Unfinished Restaurant Finder
+        Caitlyn's Unfinished Restaurant Finder 
     </h1>
+    <div>
+        Caitlyn recommends 
+        <a id="restaurantInfo" href = "">
+        </a>
+        for
+    <a id="meal">
+    </a>
+    </div>
 <script>
 var restaurant1 = {
     "name": "iCrave", 
-    "url": "https://www.yelp.com/biz/icrave-capitola-2"};
+    "url": "https://www.yelp.com/biz/icrave-capitola-2",
+    "meal": "snack"};
 
 var restaurant2 = {
     "name": "Sushi Garden",
-    "url": "https://www.yelp.com/biz/sushi-garden-capitola"};
+    "url": "https://www.yelp.com/biz/sushi-garden-capitola",
+    "meal": "lunch"};
 
 var restaurant3 = {
     "name": "Asian Express",
-    "url": "https://www.yelp.com/biz/asian-express-capitola-2"};
+    "url": "https://www.yelp.com/biz/asian-express-capitola-2",
+    "meal": "dinner"};
 
 var restaurants = [
     restaurant1,
@@ -23,10 +34,14 @@ var restaurants = [
 ];
 
 var length = restaurants.length;
-console.log(restaurants[0].name, restaurants[0].url);
-console.log(restaurants[1].name, restaurants[1].url);
-console.log(restaurants[2].name, restaurants[2].url)
-console.log(length);
+var randomNum = Math.floor(Math.random() * length);
+
+var restaurantInfo = document.getElementById("restaurantInfo");
+restaurantInfo.innerHTML = restaurants[randomNum].name;
+restaurantInfo.href = restaurants[randomNum].url;
+var meal = document.getElementById("meal");
+meal.innerHTML = restaurants[randomNum].meal;
+
 </script>
 
 
