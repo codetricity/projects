@@ -3,29 +3,43 @@
     <h1>
         Caitlyn's Unfinished Restaurant Finder 
     </h1>
-    <div>
+    <div> 
+        <div>
         Caitlyn recommends 
         <a id="restaurantInfo" href = "">
         </a>
         for
     <a id="meal">
     </a>
+</div>
+    Caitlyn likes
+    <a id="favorite">
+    </a>
+    <img id="foodImage">
+</img>
+
     </div>
 <script>
 var restaurant1 = {
     "name": "iCrave", 
     "url": "https://www.yelp.com/biz/icrave-capitola-2",
-    "meal": "snack"};
+    "meal": "snack",
+    "favorite": "mango milk tea",
+    "img": "img/bubbletea.jpg"};
 
 var restaurant2 = {
     "name": "Sushi Garden",
     "url": "https://www.yelp.com/biz/sushi-garden-capitola",
-    "meal": "lunch"};
+    "meal": "lunch",
+    "favorite": "sushi",
+    "img": "img/sushi.jpg"};
 
 var restaurant3 = {
     "name": "Asian Express",
     "url": "https://www.yelp.com/biz/asian-express-capitola-2",
-    "meal": "dinner"};
+    "meal": "dinner",
+    "favorite": "beef pho w/ mango bubble tea",
+    "img": "img/pho.jpg"};
 
 var restaurants = [
     restaurant1,
@@ -41,6 +55,10 @@ restaurantInfo.innerHTML = restaurants[randomNum].name;
 restaurantInfo.href = restaurants[randomNum].url;
 var meal = document.getElementById("meal");
 meal.innerHTML = restaurants[randomNum].meal;
+var favorite = document.getElementById("favorite");
+favorite.innerHTML = restaurants[randomNum].favorite;
+var foodImage = document.getElementById("foodImage");
+foodImage.src = restaurants[randomNum].img;
 
 </script>
 
