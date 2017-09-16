@@ -3,8 +3,16 @@
     <style>
 
         #foodImage {
-            width: 55%;
+            width: 45%;
 
+        }
+
+        #restaurantImage {
+            width: 45%;
+        }
+
+        body {
+            text-align: center;
         }
         
         #restaurantText {
@@ -26,7 +34,7 @@
     </head>
 <body>
     <h1>
-        Caitlyn's Unfinished Restaurant Finder 
+        Caitlyn's Restaurant Finder 
     </h1>
     <div id="restaurantText"> 
         <div>
@@ -43,6 +51,8 @@
     <div>
     <img id="foodImage">
 </img>
+<img id="restaurantImage">
+</img>
     </div>
 
     </div>
@@ -52,21 +62,26 @@ var restaurant1 = {
     "url": "https://www.yelp.com/biz/icrave-capitola-2",
     "meal": "snack",
     "favorite": "mango milk tea",
-    "img": "img/bubbletea.jpg"};
+    "img": "img/bubbletea.jpg",
+    "img2": "img/icrave.jpg"};
 
 var restaurant2 = {
     "name": "Sushi Garden",
     "url": "https://www.yelp.com/biz/sushi-garden-capitola",
     "meal": "lunch",
     "favorite": "sushi",
-    "img": "img/sushi.jpg"};
+    "img": "img/sushi.jpg",
+    "img2": "img/sushigarden.jpg"};
 
 var restaurant3 = {
     "name": "Asian Express",
     "url": "https://www.yelp.com/biz/asian-express-capitola-2",
     "meal": "dinner",
     "favorite": "beef pho w/ mango bubble tea",
-    "img": "img/pho.jpg"};
+    "img": "img/pho.jpg",
+    "img2": "img/asianexpress.jpg"};
+
+
 
 var restaurants = [
     restaurant1,
@@ -86,6 +101,8 @@ var favorite = document.getElementById("favorite");
 favorite.innerHTML = restaurants[randomNum].favorite;
 var foodImage = document.getElementById("foodImage");
 foodImage.src = restaurants[randomNum].img;
+var restaurantImage = document.getElementById("restaurantImage");
+restaurantImage.src = restaurants[randomNum].img2;
 
 </script>
 
