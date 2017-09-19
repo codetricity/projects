@@ -5,5 +5,5 @@ function allRestaurants() {
         restaurant3,
         restaurant4,
     ];
-    findRestaurant();
+    findRestaurant(restaurants);
 }

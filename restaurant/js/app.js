@@ -1,4 +1,4 @@
-function findRestaurant() {
+function findRestaurant(restaurants) {
 
     
     var length = restaurants.length;
