@@ -28,6 +28,11 @@ var restaurant4 = {
     "meal": "breakfast",
     "favorite": "carnitas quesdilla",
     "img": "img/quesadilla.jpg",
-    "img2": "img/avenuecafe.jpg"
+    "img2": "img/avenuecafe.jpg"}
 
-}
+var restaurant5 = {
+    "name": "Penny Ice Creamery",
+    "url": "https://www.yelp.com/biz/the-penny-ice-creamery-santa-cruz-4",
+    "meal": "snack",
+    "favorite": "marshmallow ice cream",
+    "img": "img/icecream.jpg"}
