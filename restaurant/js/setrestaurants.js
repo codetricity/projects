@@ -1,26 +1,25 @@
 function allRestaurants() {
-    var restaurants = [
-        restaurant1,
-        restaurant2,
-        restaurant3,
-        restaurant4,
-        restaurant5,
-    ];
     findRestaurant(restaurants);
 }
 
 function breakfast() {
-    var restaurants = [
-        restaurant4
-    ];
-    findRestaurant(restaurants);
+    var breakfastRestaurants = [];
+    for (var i = 0; i < restaurants.length; i++) {
+        if (restaurants[i].meal == 'breakfast'){
+            breakfastRestaurants.push(restaurants[i]);
+        }
+    }
+    findRestaurant(breakfastRestaurants);
 }
 
 function lunch() {
-    var restaurants = [
-        restaurant2
-    ];
-    findRestaurant(restaurants);
+    var lunchRestaurants = [];
+    for (var i = 0; i < restaurants.length; i++) {
+        if (restaurants[i].meal == "lunch"){
+            lunchRestaurants.push(restaurants[i]);
+        }
+    }
+    findRestaurant(lunchRestaurants);
 }
 
 function snack() {
